@@ -1,0 +1,38 @@
+<html>
+<head>
+<title> Spring Role</title>
+</head>
+<body>
+    <h1> Registration form</h1>
+    <p>
+        <html>
+<head>
+<title>Registration</title>
+<center><link rel="stylesheet" href="reg.css">
+<script>
+    function fun1()
+    {
+        var name=document.getElementById("name").value;
+        var email=document.getElementById("email").value;
+        var address=document.getElementById("address").value;
+        localStorage.setItem("name",name);
+        localStorage.setItem("email",email);
+        localStorage.setItem("address",address);
+        alert("Saved");
+    }
+</script>
+</head>
+<body bgcolor="orange">
+    <center>
+    <h1 style="color: rgb(255, 0, 0);">Registration form</h1>
+    <form action="details.html">
+        Name :<input type="text" id="name"><br>
+        Email Id :<input type="text" id="email"><br>
+        Address :<input type="text" id="address"><br>
+        <input type="Submit" value="Submit" onclick="fun1()">
+    </form>
+</body>
+</html>
+    </p>
+</body>
+</html>
